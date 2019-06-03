@@ -3,7 +3,7 @@ class ntp::params {
   $package_ensure     = 'present'
   $config_name        = 'present'
   $config_file_mode   = '0644'
-  $servers            = '0.centos.pool.ntp.org'
+  $servers            = ['0.centos.pool.ntp.org']
   $service_ensure     = 'running'
   $service_enable     = true
   $service_hasrestart = true
